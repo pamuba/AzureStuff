@@ -1,0 +1,29 @@
+{
+	"name": "team-alerts",
+	"properties": {
+		"activities": [
+			{
+				"name": "teams alerts activity",
+				"type": "WebActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"method": "POST",
+					"url": "https://livealbany.webhook.office.com/webhookb2/9b6d8db8-6109-418e-8978-717a58de33ed@b5d22194-31d5-473f-9e1d-804fdcbd88ac/IncomingWebhook/874fccb30cd64693bb5f996ee54f2cb5/cf8d1e95-110f-4faa-bffd-7a69164dc365",
+					"body": {
+						"summary": "Pipeline Failure Alert",
+						"text": "Webhook Testing"
+					}
+				}
+			}
+		],
+		"annotations": []
+	}
+}
